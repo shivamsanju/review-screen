@@ -1,0 +1,87 @@
+:root {
+  --orange: hsl(25, 97%, 53%);
+  --white: hsl(0, 0%, 100%);
+  --lightGrey: hsl(217, 12%, 63%);
+  --mediumGrey: hsl(216, 12%, 54%);
+  --darkBlue: hsl(213, 19%, 18%);
+  --veryDarkBlue: hsl(216, 12%, 8%);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+.outerBox {
+  background-image: linear-gradient(
+    to bottom right,
+    var(--darkBlue),
+    var(--veryDarkBlue)
+  );
+  padding: 30px;
+  margin-top: 150px;
+  border-radius: 20px;
+}
+
+body {
+  background-color: var(--veryDarkBlue);
+}
+
+h2 {
+  color: rgb(234, 230, 230);
+  font-family: 'Overpass', sans-serif;
+  font-size: 1.5rem;
+}
+
+p {
+  color: var(--lightGrey);
+  font-family: 'Overpass', sans-serif;
+  font-size: 0.9rem;
+}
+
+.icon {
+  border-radius: 100%;
+  background: var(--veryDarkBlue);
+}
+
+.rating {
+  background: var(--mediumGrey);
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  margin: 11px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: rgb(223, 219, 219);
+  transition: 0.3s ease all;
+}
+
+.rating:hover {
+  background: var(--orange);
+  color: rgb(223, 219, 219);
+}
+
+.rating:focus {
+  background: whitesmoke;
+  color: var(--orange);
+}
+
+.submitBtn {
+  background-color: var(--orange);
+  color: white;
+  padding: 5px;
+  border-radius: 100px;
+  margin: 20px;
+  flex: auto;
+  font-weight: 400;
+  transition: 0.3s ease all;
+}
+
+.submitBtn:hover {
+  background-color: white;
+  color: var(--orange);
+}
+
+.submitBtn:focus {
+  background-color: white;
+  color: var(--orange);
+  box-shadow: none;
+}
