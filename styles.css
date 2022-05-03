@@ -56,6 +56,11 @@ p {
   justify-content: space-between;
 }
 
+ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 .rating {
   background: var(--darkBlue);
   padding: 8px 16px;
