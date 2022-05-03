@@ -11,47 +11,60 @@
 
 .outerBox {
   background-image: linear-gradient(
-    to bottom right,
+    to bottom left,
     var(--darkBlue),
     var(--veryDarkBlue)
   );
   padding: 30px;
-  margin-top: 150px;
-  border-radius: 20px;
+  border-radius: 30px;
+  height: 360px;
+  width: 350px;
 }
 
 body {
   background-color: var(--veryDarkBlue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 95vh;
 }
 
 h2 {
   color: rgb(234, 230, 230);
   font-family: 'Overpass', sans-serif;
   font-size: 1.5rem;
+  padding: 0 0 5px 0;
 }
 
 p {
   color: var(--lightGrey);
   font-family: 'Overpass', sans-serif;
-  font-size: 0.9rem;
+  font-size: 13px;
 }
 
 .icon {
   border-radius: 100%;
-  background: var(--veryDarkBlue);
+  padding: 9px;
+  background: var(--darkBlue);
+  margin: 0 0 30px 0;
+}
+
+.rate {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .rating {
-  background: var(--mediumGrey);
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 13px;
-  padding-bottom: 13px;
-  margin: 11px;
+  background: var(--darkBlue);
+  padding: 8px 16px;
   text-decoration: none;
+  border-radius: 100%;
   font-size: 1.2rem;
-  color: rgb(223, 219, 219);
+  color: var(--mediumGrey);
   transition: 0.3s ease all;
+  margin: 15px 0 5px 0;
 }
 
 .rating:hover {
@@ -60,28 +73,30 @@ p {
 }
 
 .rating:focus {
-  background: whitesmoke;
-  color: var(--orange);
+  background: var(--lightGrey);
+  color: var(--veryDarkBlue);
+}
+
+.divBtn {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 .submitBtn {
   background-color: var(--orange);
   color: white;
-  padding: 5px;
+  padding: 8px;
   border-radius: 100px;
-  margin: 20px;
-  flex: auto;
+  border: 0px;
   font-weight: 400;
+  font-size: 1rem;
   transition: 0.3s ease all;
+  width: 98%;
+  align-self: center;
 }
 
 .submitBtn:hover {
   background-color: white;
   color: var(--orange);
-}
-
-.submitBtn:focus {
-  background-color: white;
-  color: var(--orange);
-  box-shadow: none;
 }
